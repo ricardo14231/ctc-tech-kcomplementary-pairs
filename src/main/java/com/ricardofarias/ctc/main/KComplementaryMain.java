@@ -1,6 +1,14 @@
-package com.ricardofarias.ctc.model;
+package com.ricardofarias.ctc.main;
 
-public class KComplementaryTest {
+import com.ricardofarias.ctc.model.KComplementary;
+
+public class KComplementaryMain {
+
+    /*
+           O algoritmo desenvolvico tem a complexidade de O(n^2), pois os dados são processados em pares,
+           com as duas iterações do "for".
+           fonte da explicação do O(n^2): https://dev.to/danielle8farias/complexidade-de-algoritmos-notacao-big-o-26al
+     */
 
     public static void main(String[] args) {
 /*
@@ -23,8 +31,9 @@ public class KComplementaryTest {
         KComplementary kComplementary = new KComplementary.Builder()
                 .k(2)
                 .elementoArray(1)
-                .elementoArray(1)
                 .elementoArray(2)
+                .elementoArray(0)
+                .elementoArray(-1)
                 .elementoArray(3)
                 .elementoArray(1)
                 .build();

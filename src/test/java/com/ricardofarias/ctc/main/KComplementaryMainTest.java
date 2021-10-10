@@ -1,11 +1,12 @@
-package com.ricardofarias.ctc.model;
+package com.ricardofarias.ctc.main;
 
+import com.ricardofarias.ctc.model.KComplementary;
 import com.ricardofarias.ctc.utils.KComplementaryBuilder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class KComplementaryTest {
+class KComplementaryMainTest {
 
     @Test
     @DisplayName("Retorna 0 KComplementary.")
@@ -38,16 +39,6 @@ class KComplementaryTest {
     }
 
     @Test
-    @DisplayName("Retorna 6 KComplementary.")
-    void deveRetornar_SeisKComplemntary() {
-        KComplementary kComplementary = KComplementaryBuilder.criaSeisKComplementary();
-
-        int resultado = kComplementary.verificaKComplementary();
-
-        Assertions.assertEquals(6, resultado);
-    }
-
-    @Test
     @DisplayName("Retorna 0 KComplementary ao informar array vazio.")
     void deveRetornar_ZeroKComplemntary_aoInformarArrayVazio() {
         KComplementary kComplementary = KComplementaryBuilder.criaKComplementaryComArrayVazio();
@@ -61,6 +52,16 @@ class KComplementaryTest {
     @DisplayName("Retorna 0 KComplementary ao informar K igual a zero.")
     void deveRetornar_ZeroKComplemntary_aoInformarKigualZero() {
         KComplementary kComplementary = KComplementaryBuilder.criaKComplementaryComKIgualZero();
+
+        int resultado = kComplementary.verificaKComplementary();
+
+        Assertions.assertEquals(0, resultado);
+    }
+
+    @Test
+    @DisplayName("Retorna 0 KComplementary ao informar K igual nullo.")
+    void deveRetornar_ZeroKComplemntary_aoInformarKigualNullo() {
+        KComplementary kComplementary = KComplementaryBuilder.criaKComplementaryNullo();
 
         int resultado = kComplementary.verificaKComplementary();
 

@@ -24,17 +24,10 @@ public class KComplementaryBuilder {
     public static KComplementary criaCincoKComplementary() {
         return new KComplementary.Builder()
                 .k(2)
-                .elementoArray(-2)
-                .elementoArray(4)
-                .build();
-    }
-
-    public static KComplementary criaSeisKComplementary() {
-        return new KComplementary.Builder()
-                .k(2)
-                .elementoArray(1)
                 .elementoArray(1)
                 .elementoArray(2)
+                .elementoArray(0)
+                .elementoArray(-1)
                 .elementoArray(3)
                 .elementoArray(1)
                 .build();
@@ -49,6 +42,13 @@ public class KComplementaryBuilder {
     public static KComplementary criaKComplementaryComKIgualZero() {
         return new KComplementary.Builder()
                 .k(0)
+                .elementoArray(-2)
+                .elementoArray(4)
+                .build();
+    }
+
+    public static KComplementary criaKComplementaryNullo() {
+        return new KComplementary.Builder()
                 .elementoArray(-2)
                 .elementoArray(4)
                 .build();
