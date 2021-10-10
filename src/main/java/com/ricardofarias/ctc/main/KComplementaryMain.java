@@ -5,7 +5,7 @@ import com.ricardofarias.ctc.model.KComplementary;
 public class KComplementaryMain {
 
     /*
-           O algoritmo desenvolvico tem a complexidade de O(n^2), pois os dados são processados em pares,
+           O algoritmo desenvolvido tem a complexidade de O(n^2), pois os dados são processados em pares,
            com as duas iterações do "for".
            fonte da explicação do O(n^2): https://dev.to/danielle8farias/complexidade-de-algoritmos-notacao-big-o-26al
      */
